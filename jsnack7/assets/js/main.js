@@ -4,7 +4,7 @@ var potenze = [];
 //creo var soldatino
 var soldatino = false;
 
-//creo ciclo e inserisco il cubo nell'array
+//creo ciclo
 for (var i = 0; i < 1000; i++) {
   var potenza = Math.pow(2 , i + 1);
   potenze.push(potenza);
