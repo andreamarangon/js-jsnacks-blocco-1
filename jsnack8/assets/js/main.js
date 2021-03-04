@@ -1,13 +1,15 @@
-var cifre = [];
-
-
-//chiedo numero di 4 cifre
-var numero = parseInt(prompt("Dammi un numero di 4 cifre"));
+var numero = prompt("Dammi un numero");
 console.log(numero);
-cifre.push(numero);
-console.log(cifre);
-var my = Array.from(cifre);
-console.log(my);
-//calcolo la somma delle cifre che compongono il numero
-// var somma = cifre[0] + cifre[1] + cifre[2] + cifre[3];
-// console.log(somma);
+
+var somma = 0;
+for (var i = 0; i < numero.length; i++) {
+  var numeropars = parseInt(numero[i]);
+  if (!isNaN(numeropars)) {
+    somma += parseInt(numero[i]);
+  }
+}
+
+console.log(somma);
+
+
+document.getElementById('risultato').innerHTML = somma;
